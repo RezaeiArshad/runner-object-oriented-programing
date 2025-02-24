@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(0, 0, 40)
+    background-color: rgb(0, 0, 40);
 }
 
 .hidden {
@@ -87,8 +87,17 @@ body {
    color: white;
    height: 80px;
    padding-top: 15px;
-   display: absolute;
+   position: absolute;
    font-family: tahoma;
    border-radius: 30px;
-   margin: 10vh auto;
+   margin: 10vh calc(50% - 150px);
+}
+
+#level-p {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-family: sans-serif;
+    color: beige;
+    font-size: 20px;
 }
