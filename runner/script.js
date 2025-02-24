@@ -5,7 +5,7 @@ const canvas = document.getElementById("canvas");
 const levelNumberSpan = document.getElementById("level-span");
 const levelNumberP = document.getElementById("level-p");
 const ctx = canvas.getContext("2d");
-let gravity = 1.5;
+let gravity = 1;
 let playerAtTheBottom = false;
 let theLevel = 2;
 let didNotLose = true;
@@ -275,6 +275,7 @@ startButton.addEventListener("click", () => {
 setInterval(() => {
   if (theLevel < 11 && didNotLose) {
     theLevel++;
+      gravity += 0.1;
     levelNumberSpan.textContent = theLevel - 1;
   }  
 }, 15000)
